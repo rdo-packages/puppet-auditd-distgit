@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-e1f65a5e1b683fa193537824124eabbed85761f5	puppet/puppet-auditd-distgit-ptl
+# UUID          Group Name
+False 	Non-Interactive Users
+0865d5f9a7d6b3cc8d53839771a53102bfcac7bc       	puppet/puppet-auditd-distgit-core
+e1f65a5e1b683fa193537824124eabbed85761f5        	puppet/puppet-auditd-distgit-ptl
+global:Registered-Users		Registered Users
