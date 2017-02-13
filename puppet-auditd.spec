@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:                   puppet-auditd
-Version:                XXX
-Release:                XXX
+Version:                2.2.0
+Release:                1%{?dist}
 Summary:                Manage the audit daemon and it's rules.
 License:                BSD
 
 URL:                    https://github.com/kemra102/puppet-auditd
 
-Source0:                https://github.com/kemra102/puppet-auditd/archive/%{version}.tar.gz
+Source0:                https://github.com/kemra102/puppet-auditd/archive/v%{upstream_version}.tar.gz
 
 BuildArch:              noarch
 
@@ -45,3 +45,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/auditd/
 
 
 %changelog
+* Mon Feb 13 2017 Alfredo Moralejo <amoralej@redhat.com> 2.2.0-1
+- Update to 2.2.0
+
