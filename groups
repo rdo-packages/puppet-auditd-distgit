@@ -1,5 +1,10 @@
-# UUID                                  	Group Name
-#
-0865d5f9a7d6b3cc8d53839771a53102bfcac7bc	puppet/puppet-auditd-distgit-core
-e1f65a5e1b683fa193537824124eabbed85761f5	puppet/puppet-auditd-distgit-ptl
-global:Registered-Users                 	Registered Users
+# UUID Group Name
+global:Registered-Users	Registered Users
+fc7c2ee6bf2a7ad3540c5b812b4c144209607ca1	rdo-opm-core
+4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
+global:Anonymous-Users	Anonymous Users
+f60d84672887fda25d81ee735603b4e91087ffce	puppet/puppet-auditd-ptl
+05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
+89e10d19352a1a3d4636d4b4a0c9397389269751	puppet/puppet-auditd-core
+401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Non-Interactive Users
