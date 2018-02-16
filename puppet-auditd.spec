@@ -1,14 +1,19 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%define upstream_name puppet-auditd
+%global commit c0c1ccb971dba3c085099ac3b012523f6c6b52a9
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
 
 Name:                   puppet-auditd
-Version:                XXX
-Release:                XXX
+Version:                2.2.0
+Release:                2%{?alphatag}%{?dist}
 Summary:                Manage the audit daemon and it's rules.
 License:                BSD
 
 URL:                    https://github.com/kemra102/puppet-auditd
 
-Source0:                https://github.com/kemra102/puppet-auditd/archive/%{version}.tar.gz
+Source0:                https://github.com/kemra102/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:              noarch
 
@@ -45,4 +50,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/auditd/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 2.2.0-2.c0c1ccbgit
+- Update to post 2.2.0 (c0c1ccb971dba3c085099ac3b012523f6c6b52a9)
 
